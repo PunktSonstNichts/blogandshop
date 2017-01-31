@@ -1,0 +1,59 @@
+body, html{
+  margin: 0;
+  padding: 0;
+      overflow-x: hidden;
+}
+
+header{
+height: 100vh;
+width: 100vw;
+background-image: url("elisa1.jpg");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#main_logo{
+  font-size: 6em;
+  height: 50vh;
+  width: 80vw;
+  text-align: right;
+  text-shadow: 0px 0px 5px #79b2c5;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item{
+  width: 75vw;
+  max-width: 1200px;
+}
+#img1{
+width: 40vw;
+max-width: 780px;
+min-width: 180px;
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+}
+p{
+  margin: 1vmax;
+  min-height: 40vh;
+}
+
+#footer{
+  background-color: rgb(251,149,33);
+  color: white;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 12.5vw;
+  flex-direction: row;
+}

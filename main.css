@@ -43,7 +43,7 @@ p{
 }
 @media (min-width: 450px) {
   #img1{
-  width: 80%;
+  width: 70vw;
   margin: 0 10%;
   }
 }
@@ -52,6 +52,7 @@ p{
   max-width: 600px;
   min-width: 180px;
   margin: 0;
+  width: 100%;
   }
   .content{
     display: flex;

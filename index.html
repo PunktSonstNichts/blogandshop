@@ -8,6 +8,14 @@
   <link rel="stylesheet" type="text/css" href="shopinblog.min.css">
   <link rel="stylesheet" type="text/css" href="shopinblog_img.css">
   <script type="text/javascript" src="shopinblog.min.js"></script>
+  <script type="text/javascript" >
+  $(document).ready(function(){
+    if('ontouchstart' in window || navigator.maxTouchPoints){
+      $(".content").addClass("mobile");
+    }
+  });
+  </script>
+
   <title>shopinblog</title>
 </head>
 <body>

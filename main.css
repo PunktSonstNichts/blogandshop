@@ -63,7 +63,12 @@ p{
     width: 40vw;
   }
 }
-
+.content.mobile{
+  display: inline-block;
+}
+.content.mobile > #img1{
+  width: 100%;
+}
 
 #footer{
   background-color: rgb(251,149,33);

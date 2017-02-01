@@ -64,9 +64,14 @@ p{
   }
 }
 .content.mobile{
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
 }
-.content.mobile > #img1{
+.content.mobile #img1{
+  width: 100%;
+  max-width: none;
+}
+.content.mobile p{
   width: 100%;
 }
 

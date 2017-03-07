@@ -42,7 +42,7 @@ p{
   width: 100%;
 }
 @media (min-width: 450px) {
-  #img1{
+  .zalando_img_wrapper{
   width: 70vw;
   margin: 0 10%;
   }
@@ -51,7 +51,7 @@ p{
   #main_logo{
     font-size: 10vmin;
   }
-  #img1{
+  #img1, .zalando_img_wrapper{
   max-width: 600px;
   min-width: 180px;
   margin: 0;

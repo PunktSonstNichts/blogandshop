@@ -42,7 +42,7 @@ section{
     align-items: center;
 }
 .item{
-    width: 75vw;
+    width: 90vw;
     margin: 1vmin;
     max-width: 1200px;
 }
@@ -108,7 +108,7 @@ p{
   background-color: rgb(251,149,33);
   color: white;
   font-size: 0.9em;
-  padding: 2vh 12.5vw;
+  padding: 2vh 5vw;
 }
 #footer > div{
     width: 100%;

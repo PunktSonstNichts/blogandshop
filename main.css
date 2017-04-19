@@ -42,9 +42,9 @@ section{
     align-items: center;
 }
 .item{
-  width: 90vw;
-  max-width: 1200px;
-    margin-bottom: 10vh;
+    width: 75vw;
+    margin: 1vmin;
+    max-width: 1200px;
 }
 #img1{
 width: 100%;

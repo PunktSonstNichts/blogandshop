@@ -108,14 +108,15 @@ p{
   background-color: rgb(251,149,33);
   color: white;
   font-size: 0.9em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 2vh 12.5vw;
-  flex-direction: row;
 }
-#footer > *{
-  margin: 0 1vmin;
+#footer > div{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 .zalando_img_activate{
   background: #1a1a1a;

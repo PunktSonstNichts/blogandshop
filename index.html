@@ -14,10 +14,34 @@
     if('ontouchstart' in window || navigator.maxTouchPoints){
       $(".content").addClass("mobile");
     }
+
+      var userLang = navigator.language || navigator.userLanguage;
+      if(userLang.substring(0,2) == "de"){
+          change_lang("de");
+      }else{
+          change_lang("en");
+      }
+
+
+    $("#lang_en").click(function () {
+       change_lang("en");
+    });
+
+    $("#lang_de").click(function () {
+        change_lang("de");
+    });
+
+    function change_lang(lang){
+        $("#lang_de, #lang_en").removeClass("active");
+        $("#lang_" + lang).addClass("active");
+
+        $("*[data-lang]").hide();
+        $("*[data-lang='" + lang + "']").show();
+    }
   });
   </script>
 
-  <title>blog and shop</title>
+  <title>blog x shop</title>
 </head>
 <body>
 <div id="nav">
@@ -25,15 +49,20 @@
 </div>
 <header>
 <div id="main_logo">
-  <div>blog</div> <span>&</span> <div style="font-weight: bold; color: rgb(251,149,33); font-family: serif;">shop</div>
+  <div style="font-family: 'Nunito', sans-serif;">blog</div> <span>x</span> <div style="font-weight: bold; color: rgb(251,149,33); font-family: 'Droid Sans', sans-serif;">shop</div>
 </div>
+  <div id="lang_settings">
+    <div id="lang_en" class="active">EN</div>
+    <span> | </span>
+    <div id="lang_de">DE</div>
+  </div>
 </header>
 <section>
   <div class="item">
-    <h2 class="content_heading">The idea</h2>
+    <h2 class="content_heading"><span data-lang="en">The idea</span><span data-lang="de">Die Idee</span></h2>
     <div class="content">
       <img id="img1" src="zalando_img_pic.jpeg" data-zalando="wh021i00l-b11"/>
-      <div>
+      <div data-lang="en">
         <p>Blog and shop is a plug-in for fashion and lifestyle blogs offering a
         convenient way to link the products presented by the blogger to Zalandos online shop.
         The integrated shop will allow to add the product,
@@ -52,6 +81,18 @@
         A blogger embodies a rolemodel position influencing the readers&#146; product-choices.
         Blog and shop incorporates an insight into the buying behaviour
           of fashion-forward people inheriting a strong purchase power.</p>
+      </div>
+      <div data-lang="de">
+        <p>Blog and shop ist ein plug-in f&uuml;r Mode und Lifestyle Blogs,
+        das einen direkten Link der pr&auml;sentierten Teile zum Zalando Online shop erm&ouml;glicht.
+        Der Shop wird so in den Blog integriert, dass das Produkt, beispielsweise ein <span data-zalando="se622q074-a11">Pullover</span>,
+          ohne Verlassen der Blog Seite direct in den Warenkorb gelegt warden kann.</p>
+
+        <p>Zalando w&auml;chst stetig und erweitert sein Angebot,
+        sodas shop and blog ein unkompliziertes und attraktives Werkzeug f&uuml;r den Blogger ist,
+        da die Pflege von komplexen affiliated links wegf&auml;llt.
+        Auf diese Weise wird dem Blogger nicht nur die Arbeit erleichtert,
+          sondern auch ein neuer Weg geboten Einnahmen zu erzielen.</p>
       </div>
     </div>
   </div>

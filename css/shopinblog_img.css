@@ -1,6 +1,7 @@
 .zalando_img_wrapper{
 position: relative;
 overflow: hidden;
+    margin-right: 20px;
 }
 .zalando_img_shop_wrapper{
   position: absolute;
